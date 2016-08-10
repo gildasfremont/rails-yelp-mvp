@@ -4,11 +4,14 @@
     <%= link_to "Ajouter un établissement", new_restaurant_path %>
 
     <h1>Restaurants</h1>
-    <ul>
+    <div class="list-group">
     <% @restaurants.each do |restaurant|%>
-      <li><%= link_to restaurant.name, restaurant_path(restaurant) %></li>
+
+        <%= link_to restaurant_path(restaurant), class: "list-group-item" do%>
+          <%= restaurant.name %>
+        <% end %>
     <% end %>
-    </ul>
+    </div>
 
   </div>
 </div>
