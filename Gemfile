@@ -19,6 +19,10 @@ gem 'coffee-rails', '~> 4.2'
 #fake data
 gem 'faker'
 
+#error handling
+gem 'better_errors'
+gem 'binding_of_caller'
+
 # Gemfile
 gem 'bootstrap-sass'
 gem 'font-awesome-sass'

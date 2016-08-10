@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="col-xs-8 col-xs-offset-2" style="padding-top : 50px">
+    <%= simple_form_for @restaurant do |f| %>
+      <%= f.input :name %>
+      <%= f.input :address %>
+      <%= f.input :category %>
+      <%= f.input :phone_number %>
+      <%= f.button :submit %>
+    <% end %>
+  </div>
+</div>
